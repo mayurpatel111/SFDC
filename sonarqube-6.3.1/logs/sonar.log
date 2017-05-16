@@ -1,0 +1,237 @@
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.13 00:02:20 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+2017.05.13 00:02:20 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[es]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djna.nosys=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/search/* org.sonar.search.SearchServer C:\sonarqube-6.3.1\temp\sq-process6080293784195963977properties
+2017.05.13 00:02:28 INFO  app[][o.s.p.m.Monitor] Process[es] is up
+2017.05.13 00:02:28 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[web]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\sonarqube-6.3.1\temp\sq-process345907945723779590properties
+2017.05.13 00:03:00 INFO  app[][o.s.p.m.Monitor] Process[web] is up
+2017.05.13 00:03:00 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[ce]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\sonarqube-6.3.1\temp\sq-process7493965871513503750properties
+2017.05.13 00:03:06 INFO  app[][o.s.p.m.Monitor] Process[ce] is up
+2017.05.13 00:03:06 INFO  app[][o.s.application.App] SonarQube is up
+The SonarQube service was not running.
+The SonarQube service was not running.
+ERROR: Another instance of the SonarQube application is already running.
+OpenSCManager failed - Access is denied. (0x5)
+The SonarQube service was not running.
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.14 23:40:24 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+
+WrapperSimpleApp: Encountered an error running main: java.lang.RuntimeException: Failed to reset file system
+java.lang.RuntimeException: Failed to reset file system
+	at org.sonar.process.monitor.Monitor.resetFileSystem(Monitor.java:133)
+	at org.sonar.process.monitor.Monitor.startProcesses(Monitor.java:113)
+	at org.sonar.process.monitor.Monitor.start(Monitor.java:107)
+	at org.sonar.application.App.start(App.java:73)
+	at org.sonar.application.App.main(App.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.FileSystemException: C:\sonarqube-6.3.1\temp\ce-exploded-plugins\csharp\META-INF\lib\commons-lang-2.6.jar: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at org.sonar.process.FileUtils$DeleteRecursivelyFileVisitor.visitFile(FileUtils.java:170)
+	at org.sonar.process.FileUtils$DeleteRecursivelyFileVisitor.visitFile(FileUtils.java:165)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at org.sonar.process.FileUtils.deleteDirectoryImpl(FileUtils.java:127)
+	at org.sonar.process.FileUtils.deleteDirectory(FileUtils.java:112)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:151)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:135)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:130)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:84)
+	at org.sonar.process.monitor.Monitor.resetFileSystem(Monitor.java:130)
+	... 10 more
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.14 23:40:32 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+
+WrapperSimpleApp: Encountered an error running main: java.lang.RuntimeException: Failed to reset file system
+java.lang.RuntimeException: Failed to reset file system
+	at org.sonar.process.monitor.Monitor.resetFileSystem(Monitor.java:133)
+	at org.sonar.process.monitor.Monitor.startProcesses(Monitor.java:113)
+	at org.sonar.process.monitor.Monitor.start(Monitor.java:107)
+	at org.sonar.application.App.start(App.java:73)
+	at org.sonar.application.App.main(App.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.FileSystemException: C:\sonarqube-6.3.1\temp\ce-exploded-plugins\csharp\META-INF\lib\commons-lang-2.6.jar: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at org.sonar.process.FileUtils$DeleteRecursivelyFileVisitor.visitFile(FileUtils.java:170)
+	at org.sonar.process.FileUtils$DeleteRecursivelyFileVisitor.visitFile(FileUtils.java:165)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at org.sonar.process.FileUtils.deleteDirectoryImpl(FileUtils.java:127)
+	at org.sonar.process.FileUtils.deleteDirectory(FileUtils.java:112)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:151)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:135)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:130)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:84)
+	at org.sonar.process.monitor.Monitor.resetFileSystem(Monitor.java:130)
+	... 10 more
+<-- Wrapper Stopped
+OpenSCManager failed - Access is denied. (0x5)
+The SonarQube service was not running.
+Starting the SonarQube service...
+Unable to start the service - The system cannot find the file specified. (0x2)
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.14 23:41:14 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+
+WrapperSimpleApp: Encountered an error running main: java.lang.RuntimeException: Failed to reset file system
+java.lang.RuntimeException: Failed to reset file system
+	at org.sonar.process.monitor.Monitor.resetFileSystem(Monitor.java:133)
+	at org.sonar.process.monitor.Monitor.startProcesses(Monitor.java:113)
+	at org.sonar.process.monitor.Monitor.start(Monitor.java:107)
+	at org.sonar.application.App.start(App.java:73)
+	at org.sonar.application.App.main(App.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.FileSystemException: C:\sonarqube-6.3.1\temp\ce-exploded-plugins\csharp\META-INF\lib\commons-lang-2.6.jar: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at org.sonar.process.FileUtils$DeleteRecursivelyFileVisitor.visitFile(FileUtils.java:170)
+	at org.sonar.process.FileUtils$DeleteRecursivelyFileVisitor.visitFile(FileUtils.java:165)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at org.sonar.process.FileUtils.deleteDirectoryImpl(FileUtils.java:127)
+	at org.sonar.process.FileUtils.deleteDirectory(FileUtils.java:112)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:151)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:135)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:130)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:84)
+	at org.sonar.process.monitor.Monitor.resetFileSystem(Monitor.java:130)
+	... 10 more
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.14 23:47:00 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+2017.05.14 23:47:00 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[es]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djna.nosys=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/search/* org.sonar.search.SearchServer C:\sonarqube-6.3.1\temp\sq-process5938864490324831427properties
+2017.05.14 23:47:35 INFO  app[][o.s.p.m.Monitor] Process[es] is up
+2017.05.14 23:47:35 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[web]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\sonarqube-6.3.1\temp\sq-process5273841914444038976properties
+2017.05.14 23:48:14 INFO  app[][o.s.p.m.Monitor] Process[web] is up
+2017.05.14 23:48:14 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[ce]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\sonarqube-6.3.1\temp\sq-process7724127655127220423properties
+2017.05.14 23:48:20 INFO  app[][o.s.p.m.Monitor] Process[ce] is up
+2017.05.14 23:48:20 INFO  app[][o.s.application.App] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.15 14:13:08 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+2017.05.15 14:13:08 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[es]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djna.nosys=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/search/* org.sonar.search.SearchServer C:\sonarqube-6.3.1\temp\sq-process2181395820927766682properties
+2017.05.15 14:13:27 INFO  app[][o.s.p.m.Monitor] Process[es] is up
+2017.05.15 14:13:27 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[web]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\sonarqube-6.3.1\temp\sq-process3112609056016448890properties
+2017.05.15 14:13:59 INFO  app[][o.s.p.m.Monitor] Process[web] is up
+2017.05.15 14:13:59 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[ce]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\sonarqube-6.3.1\temp\sq-process4437653962156175338properties
+2017.05.15 14:14:05 INFO  app[][o.s.p.m.Monitor] Process[ce] is up
+2017.05.15 14:14:05 INFO  app[][o.s.application.App] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2017.05.15 15:15:17 INFO  app[][o.s.p.m.Monitor] Process[ce] is stopping
+2017.05.15 15:15:19 INFO  app[][o.s.p.m.Monitor] Process[ce] is stopped
+2017.05.15 15:15:19 INFO  app[][o.s.p.m.Monitor] Process[web] is stopping
+2017.05.15 15:15:25 INFO  app[][o.s.p.m.Monitor] Process[web] is stopped
+2017.05.15 15:15:25 INFO  app[][o.s.p.m.Monitor] Process[es] is stopping
+2017.05.15 15:15:26 INFO  app[][o.s.p.m.Monitor] Process[es] is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.15 15:15:47 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+2017.05.15 15:15:47 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[es]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djna.nosys=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/search/* org.sonar.search.SearchServer C:\sonarqube-6.3.1\temp\sq-process8431666421341184677properties
+2017.05.15 15:15:59 INFO  app[][o.s.p.m.Monitor] Process[es] is up
+2017.05.15 15:15:59 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[web]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\sonarqube-6.3.1\temp\sq-process3336775814398448350properties
+2017.05.15 15:16:18 INFO  app[][o.s.p.m.Monitor] Process[web] is up
+2017.05.15 15:16:18 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[ce]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\sonarqube-6.3.1\temp\sq-process3369499947255005945properties
+2017.05.15 15:16:24 INFO  app[][o.s.p.m.Monitor] Process[ce] is up
+2017.05.15 15:16:24 INFO  app[][o.s.application.App] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2017.05.15 15:19:59 INFO  app[][o.s.p.m.Monitor] Process[ce] is stopping
+2017.05.15 15:20:01 INFO  app[][o.s.p.m.Monitor] Process[ce] is stopped
+2017.05.15 15:20:01 INFO  app[][o.s.p.m.Monitor] Process[web] is stopping
+2017.05.15 15:20:06 INFO  app[][o.s.p.m.Monitor] Process[web] is stopped
+2017.05.15 15:20:06 INFO  app[][o.s.p.m.Monitor] Process[es] is stopping
+2017.05.15 15:20:07 INFO  app[][o.s.p.m.Monitor] Process[es] is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.15 15:21:11 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+2017.05.15 15:21:11 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[es]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djna.nosys=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/search/* org.sonar.search.SearchServer C:\sonarqube-6.3.1\temp\sq-process7127273263054857380properties
+2017.05.15 15:21:23 INFO  app[][o.s.p.m.Monitor] Process[es] is up
+2017.05.15 15:21:23 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[web]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\sonarqube-6.3.1\temp\sq-process1151693864267763860properties
+2017.05.15 15:21:40 INFO  app[][o.s.p.m.Monitor] Process[web] is up
+2017.05.15 15:21:40 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[ce]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\sonarqube-6.3.1\temp\sq-process8899460346824690261properties
+2017.05.15 15:21:47 INFO  app[][o.s.p.m.Monitor] Process[ce] is up
+2017.05.15 15:21:47 INFO  app[][o.s.application.App] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2017.05.15 16:24:35 INFO  app[][o.s.p.m.Monitor] Process[ce] is stopping
+2017.05.15 16:24:37 INFO  app[][o.s.p.m.Monitor] Process[ce] is stopped
+2017.05.15 16:24:37 INFO  app[][o.s.p.m.Monitor] Process[web] is stopping
+2017.05.15 16:24:42 INFO  app[][o.s.p.m.Monitor] Process[web] is stopped
+2017.05.15 16:24:42 INFO  app[][o.s.p.m.Monitor] Process[es] is stopping
+2017.05.15 16:24:44 INFO  app[][o.s.p.m.Monitor] Process[es] is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.15 17:48:35 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\sonarqube-6.3.1\temp
+2017.05.15 17:48:35 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[es]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djna.nosys=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/search/* org.sonar.search.SearchServer C:\sonarqube-6.3.1\temp\sq-process5202354764593398792properties
+2017.05.15 17:48:49 INFO  app[][o.s.p.m.Monitor] Process[es] is up
+2017.05.15 17:48:49 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[web]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\sonarqube-6.3.1\temp\sq-process3442973786250019587properties
+2017.05.15 17:49:11 INFO  app[][o.s.p.m.Monitor] Process[web] is up
+2017.05.15 17:49:11 INFO  app[][o.s.p.m.JavaProcessLauncher] Launch process[ce]: C:\Program Files (x86)\java\jre\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=C:\sonarqube-6.3.1\temp -javaagent:C:\Program Files (x86)\java\jre\lib\management-agent.jar -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\sonarqube-6.3.1\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\sonarqube-6.3.1\temp\sq-process439562308170700847properties
+2017.05.15 17:49:18 INFO  app[][o.s.p.m.Monitor] Process[ce] is up
+2017.05.15 17:49:18 INFO  app[][o.s.application.App] SonarQube is up

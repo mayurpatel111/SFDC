@@ -1,0 +1,62 @@
+2017.05.15 00:04:15 INFO  ce[AVwIPU1NP4em4F-QTdVD][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwIPU1NP4em4F-QTdVD
+2017.05.15 00:04:35 INFO  ce[AVwIPU1NP4em4F-QTdVD][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwIPU1NP4em4F-QTdVD | time=20000ms
+2017.05.15 14:14:00 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2017.05.15 14:14:00 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.15 14:14:01 INFO  ce[][o.e.plugins] [Hub] modules [], plugins [], sites []
+2017.05.15 14:14:02 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.15 14:14:02 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.15 14:14:02 WARN  ce[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.15 14:14:03 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: C:\sonarqube-6.3.1
+2017.05.15 14:14:03 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2017.05.15 14:14:05 INFO  ce[][o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Wed Nov 16 14:14:05 IST 2016
+2017.05.15 14:14:05 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is up
+2017.05.15 15:01:00 INFO  ce[AVwLclDEpa3IL6c1Pi7L][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwLclDEpa3IL6c1Pi7L
+2017.05.15 15:01:31 INFO  ce[AVwLclDEpa3IL6c1Pi7L][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwLclDEpa3IL6c1Pi7L | time=31267ms
+2017.05.15 15:15:18 INFO  ce[][o.s.p.StopWatcher] Stopping process
+2017.05.15 15:15:18 INFO  ce[][o.s.ce.app.CeServer] Compute Engine shutting down...
+2017.05.15 15:16:19 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2017.05.15 15:16:19 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.15 15:16:20 INFO  ce[][o.e.plugins] [Corsair] modules [], plugins [], sites []
+2017.05.15 15:16:20 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.15 15:16:20 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.15 15:16:20 WARN  ce[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.15 15:16:21 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: C:\sonarqube-6.3.1
+2017.05.15 15:16:22 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2017.05.15 15:16:23 INFO  ce[][o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Wed Nov 16 15:16:23 IST 2016
+2017.05.15 15:16:23 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is up
+2017.05.15 15:19:59 INFO  ce[][o.s.p.StopWatcher] Stopping process
+2017.05.15 15:19:59 INFO  ce[][o.s.ce.app.CeServer] Compute Engine shutting down...
+2017.05.15 15:21:41 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2017.05.15 15:21:41 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.15 15:21:42 INFO  ce[][o.e.plugins] [Whistler] modules [], plugins [], sites []
+2017.05.15 15:21:43 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.15 15:21:43 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.15 15:21:43 WARN  ce[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.15 15:21:44 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: C:\sonarqube-6.3.1
+2017.05.15 15:21:44 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2017.05.15 15:21:47 INFO  ce[][o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Wed Nov 16 15:21:47 IST 2016
+2017.05.15 15:21:47 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is up
+2017.05.15 15:23:02 INFO  ce[AVwLhnzS8S2W3-2_4MNV][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwLhnzS8S2W3-2_4MNV
+2017.05.15 15:23:51 INFO  ce[AVwLhnzS8S2W3-2_4MNV][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwLhnzS8S2W3-2_4MNV | time=49018ms
+2017.05.15 15:23:51 INFO  ce[AVwLhxyq8S2W3-2_4MNW][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwLhxyq8S2W3-2_4MNW
+2017.05.15 15:24:17 INFO  ce[AVwLhxyq8S2W3-2_4MNW][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwLhxyq8S2W3-2_4MNW | time=25661ms
+2017.05.15 16:01:45 INFO  ce[AVwLqet78S2W3-2_4MNY][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=SFDC | type=REPORT | id=AVwLqet78S2W3-2_4MNY
+2017.05.15 16:03:06 INFO  ce[AVwLqet78S2W3-2_4MNY][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=SFDC | type=REPORT | id=AVwLqet78S2W3-2_4MNY | time=81216ms
+2017.05.15 16:06:16 INFO  ce[AVwLrg8K8S2W3-2_4MNZ][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=SFDC | type=REPORT | id=AVwLrg8K8S2W3-2_4MNZ
+2017.05.15 16:07:24 INFO  ce[AVwLrg8K8S2W3-2_4MNZ][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=SFDC | type=REPORT | id=AVwLrg8K8S2W3-2_4MNZ | time=67952ms
+2017.05.15 16:13:19 INFO  ce[AVwLtICW8S2W3-2_4MNa][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwLtICW8S2W3-2_4MNa
+2017.05.15 16:14:48 INFO  ce[AVwLtICW8S2W3-2_4MNa][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwLtICW8S2W3-2_4MNa | time=89573ms
+2017.05.15 16:15:53 INFO  ce[AVwLttpt8S2W3-2_4MNb][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwLttpt8S2W3-2_4MNb
+2017.05.15 16:17:08 INFO  ce[AVwLttpt8S2W3-2_4MNb][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwLttpt8S2W3-2_4MNb | time=75386ms
+2017.05.15 16:24:35 INFO  ce[][o.s.p.StopWatcher] Stopping process
+2017.05.15 16:24:35 INFO  ce[][o.s.ce.app.CeServer] Compute Engine shutting down...
+2017.05.15 17:49:13 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2017.05.15 17:49:13 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.15 17:49:14 INFO  ce[][o.e.plugins] [Everett Thomas] modules [], plugins [], sites []
+2017.05.15 17:49:15 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.15 17:49:15 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.15 17:49:15 WARN  ce[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.15 17:49:16 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: C:\sonarqube-6.3.1
+2017.05.15 17:49:16 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2017.05.15 17:49:18 INFO  ce[][o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Wed Nov 16 17:49:18 IST 2016
+2017.05.15 17:49:18 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is up

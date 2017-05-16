@@ -1,0 +1,56 @@
+2017.05.14 12:02:03 INFO  ce[AVwFqBzQ0y1gXj_lgDvq][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwFqBzQ0y1gXj_lgDvq
+2017.05.14 12:02:04 INFO  ce[AVwFqBzQ0y1gXj_lgDvq][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwFqBzQ0y1gXj_lgDvq | time=938ms
+2017.05.14 12:05:19 INFO  ce[AVwFqxlo0y1gXj_lgDvr][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwFqxlo0y1gXj_lgDvr
+2017.05.14 12:05:20 INFO  ce[AVwFqxlo0y1gXj_lgDvr][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwFqxlo0y1gXj_lgDvr | time=922ms
+2017.05.14 12:09:22 INFO  ce[AVwFrs1K0y1gXj_lgDvs][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwFrs1K0y1gXj_lgDvs
+2017.05.14 12:09:23 INFO  ce[AVwFrs1K0y1gXj_lgDvs][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwFrs1K0y1gXj_lgDvs | time=725ms
+2017.05.14 12:11:02 INFO  ce[AVwFsFG40y1gXj_lgDvt][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwFsFG40y1gXj_lgDvt
+2017.05.14 12:11:03 INFO  ce[AVwFsFG40y1gXj_lgDvt][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwFsFG40y1gXj_lgDvt | time=958ms
+2017.05.14 12:14:00 INFO  ce[AVwFsw1w0y1gXj_lgDvu][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwFsw1w0y1gXj_lgDvu
+2017.05.14 12:14:01 INFO  ce[AVwFsw1w0y1gXj_lgDvu][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwFsw1w0y1gXj_lgDvu | time=828ms
+2017.05.14 12:16:47 INFO  ce[AVwFtZRl0y1gXj_lgDvv][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwFtZRl0y1gXj_lgDvv
+2017.05.14 12:16:47 INFO  ce[AVwFtZRl0y1gXj_lgDvv][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwFtZRl0y1gXj_lgDvv | time=640ms
+2017.05.14 12:19:41 INFO  ce[AVwFuEQa0y1gXj_lgDvw][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwFuEQa0y1gXj_lgDvw
+2017.05.14 12:19:41 INFO  ce[AVwFuEQa0y1gXj_lgDvw][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwFuEQa0y1gXj_lgDvw | time=765ms
+2017.05.14 12:26:42 INFO  ce[AVwFvrF-0y1gXj_lgDvx][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwFvrF-0y1gXj_lgDvx
+2017.05.14 12:26:43 INFO  ce[AVwFvrF-0y1gXj_lgDvx][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwFvrF-0y1gXj_lgDvx | time=799ms
+2017.05.14 19:11:44 INFO  ce[AVwHMYMJ0y1gXj_lgDvy][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHMYMJ0y1gXj_lgDvy
+2017.05.14 19:11:45 INFO  ce[AVwHMYMJ0y1gXj_lgDvy][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHMYMJ0y1gXj_lgDvy | time=735ms
+2017.05.14 19:18:49 INFO  ce[AVwHN_pO0y1gXj_lgDvz][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHN_pO0y1gXj_lgDvz
+2017.05.14 19:18:50 INFO  ce[AVwHN_pO0y1gXj_lgDvz][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHN_pO0y1gXj_lgDvz | time=657ms
+2017.05.14 19:19:50 INFO  ce[AVwHOOkS0y1gXj_lgDv0][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHOOkS0y1gXj_lgDv0
+2017.05.14 19:19:51 INFO  ce[AVwHOOkS0y1gXj_lgDv0][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHOOkS0y1gXj_lgDv0 | time=766ms
+2017.05.14 19:29:05 INFO  ce[AVwHQWJK0y1gXj_lgDv1][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_123 | type=REPORT | id=AVwHQWJK0y1gXj_lgDv1
+2017.05.14 19:29:06 INFO  ce[AVwHQWJK0y1gXj_lgDv1][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_123 | type=REPORT | id=AVwHQWJK0y1gXj_lgDv1 | time=1422ms
+2017.05.14 19:36:11 INFO  ce[AVwHR-Mj0y1gXj_lgDv2][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHR-Mj0y1gXj_lgDv2
+2017.05.14 19:36:12 INFO  ce[AVwHR-Mj0y1gXj_lgDv2][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHR-Mj0y1gXj_lgDv2 | time=891ms
+2017.05.14 19:56:19 INFO  ce[AVwHWlDa0y1gXj_lgDv3][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHWlDa0y1gXj_lgDv3
+2017.05.14 19:56:20 INFO  ce[AVwHWlDa0y1gXj_lgDv3][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHWlDa0y1gXj_lgDv3 | time=1110ms
+2017.05.14 19:56:26 INFO  ce[AVwHWm4e0y1gXj_lgDv4][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHWm4e0y1gXj_lgDv4
+2017.05.14 19:56:26 INFO  ce[AVwHWm4e0y1gXj_lgDv4][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHWm4e0y1gXj_lgDv4 | time=641ms
+2017.05.14 19:58:25 INFO  ce[AVwHXDzE0y1gXj_lgDv5][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHXDzE0y1gXj_lgDv5
+2017.05.14 19:58:26 INFO  ce[AVwHXDzE0y1gXj_lgDv5][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHXDzE0y1gXj_lgDv5 | time=813ms
+2017.05.14 19:58:32 INFO  ce[AVwHXFWw0y1gXj_lgDv6][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHXFWw0y1gXj_lgDv6
+2017.05.14 19:58:33 INFO  ce[AVwHXFWw0y1gXj_lgDv6][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHXFWw0y1gXj_lgDv6 | time=563ms
+2017.05.14 20:08:27 INFO  ce[AVwHZW2f0y1gXj_lgDv7][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHZW2f0y1gXj_lgDv7
+2017.05.14 20:08:28 INFO  ce[AVwHZW2f0y1gXj_lgDv7][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHZW2f0y1gXj_lgDv7 | time=672ms
+2017.05.14 20:08:34 INFO  ce[AVwHZYXM0y1gXj_lgDv8][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwHZYXM0y1gXj_lgDv8
+2017.05.14 20:08:35 INFO  ce[AVwHZYXM0y1gXj_lgDv8][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwHZYXM0y1gXj_lgDv8 | time=688ms
+2017.05.14 23:29:03 INFO  ce[AVwIHRmR0y1gXj_lgDv9][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwIHRmR0y1gXj_lgDv9
+2017.05.14 23:29:04 INFO  ce[AVwIHRmR0y1gXj_lgDv9][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwIHRmR0y1gXj_lgDv9 | time=1000ms
+2017.05.14 23:29:11 INFO  ce[AVwIHTWb0y1gXj_lgDv-][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwIHTWb0y1gXj_lgDv-
+2017.05.14 23:29:12 INFO  ce[AVwIHTWb0y1gXj_lgDv-][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwIHTWb0y1gXj_lgDv- | time=828ms
+2017.05.14 23:48:15 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2017.05.14 23:48:15 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.14 23:48:16 INFO  ce[][o.e.plugins] [Sally Blevins] modules [], plugins [], sites []
+2017.05.14 23:48:17 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.14 23:48:17 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.14 23:48:17 WARN  ce[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.14 23:48:18 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: C:\sonarqube-6.3.1
+2017.05.14 23:48:18 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2017.05.14 23:48:20 INFO  ce[][o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Tue Nov 15 23:48:20 IST 2016
+2017.05.14 23:48:20 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is up
+2017.05.14 23:53:03 INFO  ce[AVwIMw9TP4em4F-QTdVB][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwIMw9TP4em4F-QTdVB
+2017.05.14 23:53:42 INFO  ce[AVwIMw9TP4em4F-QTdVB][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwIMw9TP4em4F-QTdVB | time=39800ms
+2017.05.14 23:53:51 INFO  ce[AVwIM8ULP4em4F-QTdVC][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_222 | type=REPORT | id=AVwIM8ULP4em4F-QTdVC
+2017.05.14 23:54:12 INFO  ce[AVwIM8ULP4em4F-QTdVC][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_222 | type=REPORT | id=AVwIM8ULP4em4F-QTdVC | time=21833ms

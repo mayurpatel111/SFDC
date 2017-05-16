@@ -1,0 +1,18 @@
+2017.05.13 00:03:01 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2017.05.13 00:03:01 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.13 00:03:02 INFO  ce[][o.e.plugins] [Philip Fetter] modules [], plugins [], sites []
+2017.05.13 00:03:03 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.13 00:03:03 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.13 00:03:03 WARN  ce[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.13 00:03:04 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: C:\sonarqube-6.3.1
+2017.05.13 00:03:05 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2017.05.13 00:03:06 INFO  ce[][o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Mon Nov 14 00:03:06 IST 2016
+2017.05.13 00:03:06 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is up
+2017.05.13 00:05:09 INFO  ce[AVv98WON0y1gXj_lgDvk][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_123 | type=REPORT | id=AVv98WON0y1gXj_lgDvk
+2017.05.13 00:05:13 INFO  ce[AVv98WON0y1gXj_lgDvk][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_123 | type=REPORT | id=AVv98WON0y1gXj_lgDvk | time=4548ms
+2017.05.13 00:15:04 INFO  ce[AVv9-nox0y1gXj_lgDvm][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_111 | type=REPORT | id=AVv9-nox0y1gXj_lgDvm
+2017.05.13 00:15:05 INFO  ce[AVv9-nox0y1gXj_lgDvm][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_111 | type=REPORT | id=AVv9-nox0y1gXj_lgDvm | time=1040ms
+2017.05.13 00:19:26 INFO  ce[AVv9_nxx0y1gXj_lgDvn][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_111 | type=REPORT | id=AVv9_nxx0y1gXj_lgDvn
+2017.05.13 00:19:27 INFO  ce[AVv9_nxx0y1gXj_lgDvn][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_111 | type=REPORT | id=AVv9_nxx0y1gXj_lgDvn | time=1056ms
+2017.05.13 17:23:13 INFO  ce[AVwBp8kp0y1gXj_lgDvo][o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=Dev_111 | type=REPORT | id=AVwBp8kp0y1gXj_lgDvo
+2017.05.13 17:23:14 INFO  ce[AVwBp8kp0y1gXj_lgDvo][o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=Dev_111 | type=REPORT | id=AVwBp8kp0y1gXj_lgDvo | time=1128ms
